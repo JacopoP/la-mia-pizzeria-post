@@ -16,6 +16,7 @@ namespace project.Models
 
         [Required(ErrorMessage = "Campo obbligatorio!")]
         [StringLength(100, MinimumLength = 10, ErrorMessage = "La descrizione deve essere compresa tra 10 e 100 caratteri")]
+        [MoreThan2Words]
         public string Descrizione { get; set; }
 
         [Required(ErrorMessage = "Campo obbligatorio!")]
